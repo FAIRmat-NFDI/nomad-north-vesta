@@ -19,12 +19,11 @@ from nomad.config.models.north import NORTHTool
 from nomad.config.models.plugins import NorthToolEntryPoint
 
 vesta = NORTHTool(
-    image='ghcr.io/FAIRmat-NFDI/nomad-north-vesta:latest',
-    description="""### **VESTA**: Visualization for Electronic and STructural Analysis
+    image='ghcr.io/fairmat-nfdi/nomad-north-vesta:v0.1.0',
+    description="""### **VESTA**:
 
-    VESTA is a software program used for visualizing and analyzing crystal structures.
-    [Homepage](https://jp-minerals.org/vesta/en/).""",
-    short_description='Visualization for Electronic Structural Analysis in NOMAD',
+    [VESTA is a software program used for visualizing and analyzing crystal structures](https://jp-minerals.org/vesta/en/)""",
+    short_description='Visualization for Electronic STructural Analysis in NOMAD',
     external_mounts=[],
     file_extensions=['vesta, cif, cry, exp, fcf, ics, ins, in, min, mol, pdb, struct, vasp, wrl, xyz'],
     icon='vesta.png',
