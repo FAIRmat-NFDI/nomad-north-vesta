@@ -19,7 +19,7 @@ from nomad.config.models.north import NORTHTool
 from nomad.config.models.plugins import NorthToolEntryPoint
 
 vesta = NORTHTool(
-    image='ghcr.io/fairmat-nfdi/nomad-north-vesta:v0.1.0',
+    image='ghcr.io/fairmat-nfdi/nomad-north-vesta:latest',
     description="""### **VESTA**:
 
     [VESTA is a software program used for visualizing and analyzing crystal structures](https://jp-minerals.org/vesta/en/)""",
