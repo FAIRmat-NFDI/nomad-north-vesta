@@ -11,7 +11,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 USER root
 
 RUN apt update \
- && apt install -y \
+ && apt install --no-install-recommends -y \
       wget \
       libgl1 \
       libglu1-mesa \
