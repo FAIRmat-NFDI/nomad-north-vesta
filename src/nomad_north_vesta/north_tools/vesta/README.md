@@ -4,7 +4,7 @@ This directory contains the configuration for the vesta NORTH (NOMAD Remote Tool
 
 ## Quick start
 
-The vesta NORTH tool provides a containerized environment defined in `NORTHtool` definition, a `NorthToolEntryPoint`, and a Dockerfile.
+The vesta NORTH tool provides a containerized environment defined in a `NORTHTool` definition, a `NorthToolEntryPoint`, and a Dockerfile.
 
 ## Documentation
 
