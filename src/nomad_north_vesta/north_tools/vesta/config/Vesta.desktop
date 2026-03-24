@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VESTA
+Exec=/home/jovyan/vesta/VESTA-gtk3/VESTA
+Path=/home/jovyan/vesta
+Terminal=false
+StartupNotify=false
