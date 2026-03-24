@@ -38,10 +38,11 @@ dev = [
     "pytest",
     "structlog",
     "mkdocs",
-    "mkdocs-material==8.1.1",
+    "mkdocs-material==9.7.3",
     "pymdown-extensions",
     "mkdocs-click",
     "pytest-asyncio",
+    "cruft"
 ]
 [dependency-groups]
 north = [
@@ -138,7 +139,7 @@ version_scheme = "no-guess-dev"
 local_scheme = "node-and-date"
 
 [project.entry-points.'nomad.plugin']
-north_tool_entry_point = "nomad_north_vesta.north_tools.vesta:north_tool_entry_point"
+north_entry_point = "nomad_north_vesta.north_tools:north_entry_point"
 
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues

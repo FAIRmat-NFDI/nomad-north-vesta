@@ -15,28 +15,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from nomad.config.models.north import NORTHTool
-from nomad.config.models.plugins import NorthToolEntryPoint
-
-vesta = NORTHTool(
-    image='ghcr.io/fairmat-nfdi/nomad-north-vesta:main',
-    description="""### **VESTA**:
-
-    [VESTA is a software program used for visualizing and analyzing crystal structures](https://jp-minerals.org/vesta/en/)""",
-    short_description='Visualization for Electronic STructural Analysis in NOMAD',
-    external_mounts=[],
-    file_extensions=['vesta, cif, cry, exp, fcf, ics, ins, in, min, mol, pdb, struct, vasp, wrl, xyz'],
-    icon='https://github.com/FAIRmat-NFDI/nomad-north-vesta/blob/main/src/nomad_north_vesta/north_tools/vesta/vesta.png',
-    image_pull_policy='Always',
-    default_url='/desktop',
-    maintainer=[{'email': 'markus.kuehbach@physik.hu-berlin.de', 'name': 'Markus Kühbach'}],
-    mount_path='/home/jovyan',
-    path_prefix='lab/tree',
-    privileged=False,
-    with_path=True,
-    display_name='vesta',
-)
-
-north_tool_entry_point = NorthToolEntryPoint(
-    id_url_safe='nomad_north_vesta', north_tool=vesta
-)
