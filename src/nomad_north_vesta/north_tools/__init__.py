@@ -1,7 +1,7 @@
 from nomad.config.models.north import NORTHTool
 from nomad.config.models.plugins import NorthToolEntryPoint
 
-vesta = NORTHTool(
+vesta_north_tool = NORTHTool(
     short_description='Use VESTA (Visualization for Electronic STructural Analysis) in NOMAD.',
     image='ghcr.io/fairmat-nfdi/nomad-north-vesta:main',
     description="""### **VESTA**:
@@ -22,7 +22,7 @@ vesta = NORTHTool(
     display_name='vesta',
 )
 
-north_entry_point = NorthToolEntryPoint(
-    id_url_safe='nomad-north-vesta-vesta',
-    north_tool=vesta,
+vesta = NorthToolEntryPoint(
+    id_url_safe='vesta',
+    north_tool=vesta_north_tool,
 )
