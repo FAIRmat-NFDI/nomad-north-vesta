@@ -1,9 +1,7 @@
 def test_importing_north_tool():
     # this will raise an exception if pydantic model validation fails
-    from nomad_north_vesta.north_tools import north_entry_point
+    from nomad_north_vesta.north_tools import vesta
 
-    expected_id = 'nomad-north-vesta-vesta'
-    assert (
-        north_entry_point.id_url_safe == expected_id
-        or north_entry_point.id == 'nomad-north-nomad-north-vesta'
-    ), 'NORTHTool entry point has incorrect id or id_url_safe'
+    assert vesta.id_url_safe == 'vesta' or vesta.id == 'nomad-north-vesta', (
+        'NORTHTool entry point has incorrect id or id_url_safe'
+    )
