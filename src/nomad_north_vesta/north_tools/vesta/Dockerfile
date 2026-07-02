@@ -21,12 +21,14 @@ RUN apt update \
 # Switch back to jovyan to avoid accidental container runs as root
 USER ${NB_UID}
 
-WORKDIR "${HOME}"
+WORKDIR "${HOME}/vesta"
 
 # 3.5.8 is the latest version, was released in 2022, maybe feature complete
 RUN wget https://jp-minerals.org/vesta/archives/3.5.8/VESTA-gtk3.tar.bz2 \
  && tar -xvf VESTA-gtk3.tar.bz2 \
  && rm -f VESTA-gtk3.tar.bz2
+
+WORKDIR "${HOME}"
 
 COPY --chown=${NB_UID}:${NB_GID} "src/nomad_north_vesta/north_tools/vesta/config/Vesta.desktop" "${HOME}/.config/autostart/Vesta.desktop"
 
