@@ -10,7 +10,7 @@ vesta_north_tool = NORTHTool(
 
     [Research article about the software](https://doi.org/10.1107/S0021889808012016)""",
     external_mounts=[],
-    file_extensions=['vesta, cif, cry, exp, fcf, ics, ins, in, min, mol, pdb, struct, vasp, wrl, xyz'],
+    file_extensions=['vesta', 'cif', 'cry', 'exp', 'fcf', 'ics', 'ins', 'in', 'min', 'mol', 'pdb', 'struct', 'vasp', 'wrl', 'xyz'],
     icon='https://raw.githubusercontent.com/FAIRmat-NFDI/nomad-north-vesta/main/src/nomad_north_vesta/north_tools/vesta/vesta.png',
     image_pull_policy='Always',
     default_url='/desktop',
