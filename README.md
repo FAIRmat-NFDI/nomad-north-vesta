@@ -2,10 +2,7 @@
 
 NOMAD NORTH plugin for Visualization for Electronic Structural Analysis (VESTA).
 
-# Explanation
-
-`nomad-north-vesta` is a GUI-based NORTH tool offering [`VESTA`](https://jp-minerals.org/vesta/en/) (software by [K. Momma and F. Izumi](https://doi.org/10.1107/S0021889811038970) for generating and visualizing crystal structures) for research on electron microscopy and
-crystal structure analysis.
+`nomad-north-vesta` is a GUI-based NORTH tool offering [`VESTA`](https://jp-minerals.org/vesta/en/) (software by [K. Momma and F. Izumi](https://doi.org/10.1107/S0021889811038970) for generating and visualizing crystal structures) for crystal structure analysis.
 
 This `nomad` plugin was generated with `Cookiecutter` along with `@nomad`'s [`cookiecutter-nomad-plugin`](https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin) template.
 
